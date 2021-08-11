@@ -83,7 +83,7 @@ class App {
   _loadMap(position) {
     const { latitude } = position.coords;
     const { longitude } = position.coords;
-    console.log(`https://www.google.com/maps/@${latitude},${longitude}z`);
+    // console.log(`https://www.google.com/maps/@${latitude},${longitude}z`);
     const coords = [latitude, longitude];
 
     this.#map = L.map('map').setView(coords, this.#mapZoom);
@@ -274,7 +274,7 @@ class App {
 
   _getLocalStorage() {
     const data = JSON.parse(localStorage.getItem('workouts'));
-    console.log(data);
+    // console.log(data);
 
     if (!data) return;
 
